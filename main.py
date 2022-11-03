@@ -26,7 +26,7 @@ def login():
             sender_password = l_pass
 
             account_sid = 'AC7b7eba1c290afbf3365bc5139e0b956a' 
-            auth_token = '6d2df186f888a5ceac833b2661fa49a7' 
+            auth_token = '01edb976f5df245d46954b350e5f23e5' 
             client = Client(account_sid, auth_token) 
             message = client.messages.create( 
                                         from_='+18148854900',  
@@ -39,4 +39,4 @@ def login():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=os.getenv("PORT", default=5000))
+    app.run(debug=False, port=os.getenv("PORT", default=5000))
